@@ -7,8 +7,9 @@
 # Imprime um controle do cron
 date1=`date +%Y%m%d%H%M`
 touch /root/Scritp_Backup/CRON_INICIADO_EM_${date1}.log
-# Nao esquecer do LC_TIME, variavel que eh diferente no cron
+# Nao esquecer do LC_TIME, variavel que eh diferente no cron,
 # do que na linha de comando. ( portugues na linha de comando e ingles no cron )
+# Inserir a linha abaixo usando o comando ( crontab -e ) - roda o script todo dia em um certo horario
 #30 9 * * * LC_TIME=pt_BR.UTF-8 /root/Scritp_Backup/backupvms.sh &>> /root/Scritp_Backup/cron.log
 echo " -- FIM__Controle_cron --"
 
