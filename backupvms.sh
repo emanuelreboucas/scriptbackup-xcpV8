@@ -4,7 +4,7 @@
 ## Programa modificado da versão de Vagner Cezarino
 ##
 
-# Imprime um controle do cron
+# Imprime um controle do cron ( para fim de debug apenas - opcional )
 date1=`date +%Y%m%d%H%M`
 touch /root/Scritp_Backup/CRON_INICIADO_EM_${date1}.log
 # Nao esquecer do LC_TIME, variavel que eh diferente no cron,
