@@ -94,6 +94,7 @@ echo ${backupDay} >> ${arqLog}
 echo "   ---ESPACO EM DISCO DA PARTICAO WINDOWS --> " ${espaco} >> ${arqLog}
 echo "   ---ESPACO EM DISCO DA PARTICAO WINDOWS --> " ${espaco}
 echo " "
+# Linhas abaixo usadas para fim de debug - opcionais ( podem ser comentadas )
 echo " ---IMPRIME BACKUPDAY"
 echo ${backupDay}
 echo " ---IMPRIME PRIMEIRO ELEMENTO DA ARRAYVMS"
