@@ -22,7 +22,7 @@ dow5="sexta"
 dow6="sabado"
 echo " -- FIM__Day_of_week --"
 
-# Separação dos backups em dias comforme variáveis (dow0 até dow6)
+# Separação dos backups em dias comforme variáveis (dow0 até dow6) - inserir as VMs que serão backupeadas por dia
 bkp0=("Clone" "Printerserver")
 bkp1=("Amanda" "Ipcontrol")
 bkp2=("Acads" "Solidworks")
