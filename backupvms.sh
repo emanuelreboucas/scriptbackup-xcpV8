@@ -383,7 +383,7 @@ echo " -- FIM__Informacoes_finais_de_LOG --"
 
 ### -----------
 
-#Desmonta unidade de backup
+#Desmonta unidade de backup (descomente a linha abaixo se quiser desmontar a unidade de backup ao fim do backup)
 #umount /mnt/backup
 exit 0
 
