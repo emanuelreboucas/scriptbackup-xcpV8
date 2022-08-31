@@ -53,8 +53,8 @@ storageSnapshot="b49119f2-ea53-ddca-02f8-aeaadd36128a" # Storage XenServer que a
 pathBackup="//10.140.2.77/vmachinebackup" #Caminho de rede do servidor e pasta de Backup
 arqLog="/mnt/backup/_log/bkpvms${dataarq}.log" #Arquivo de log, criar a subpasta _log na pasta de backup
 numBackups="1,2d" # Quantidade de backups antigos (2 dia=2d) em retenção no Servidor de bkp
-winUser="admin" # Usuario com permissão de escrita no servidor de backup
-winPwd="245EBE672002" # Senha do usuário do servidor de backup
+winUser="admin1" # Usuario com permissão de escrita no servidor de backup
+winPwd="222HGF654" # Senha do usuário do servidor de backup
 particao="/dev/mapper/VG_XenStorage--c7a6d2d6--829b--8acf--38f8--fba02ca3eb56-MGT"
 maxStorageUse=80 #Valor máximo de uso da storage local para prosseguir com backup (em %)
 echo " -- FIM__Inicializacao_das_variaveis PARTE2 --"
@@ -66,7 +66,7 @@ echo " -- FIM__Inicializacao_das_variaveis PARTE2 --"
 
 if test -d /mnt/backup; then echo " --EXISTE DIRETORIO--"; else mkdir -p /mnt/backup; fi;
 #mount -t cifs -o username=${winUser},password=${winPwd},domain=${winDomain} ${pathBackup} /mnt/backup -vvv
-mount -t cifs -o username="admin",password="222HGF654" //10.140.2.77/vmachinebackup /mnt/backup -vvv
+mount -t cifs -o username="admin1",password="222HGF654" //10.140.2.77/vmachinebackup /mnt/backup -vvv
 echo " -- FIM__Da_montagem_da_particao_windows_QNAP --"
 
 ##---- FIM DA MONTAGEM
