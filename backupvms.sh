@@ -38,7 +38,7 @@ echo " -- FIM__Separacao_dos_backups --"
 backupDay=`date +%A` 
 # Inicia a variavel arrayvms com algum valor inicial
 arrayvms=${bkp0[*]}
-# Pega o valor de uso e espaco em disco da particao montada windows QNAP
+# Pega o valor de uso e espaco em disco da particao montada windows CIFS
 espaco=$(df --output=pcent /mnt/backup | sed '1d;s/^ //;')
 dtbkp=`date +%Y%m%d` # data completa do backup para nome dos arquivos.
 dataarq=`date +%Y%m%d` # data para numenclatura do arquivo de log.
