@@ -74,8 +74,7 @@ echo " -- FIM__Da_montagem_da_particao_windows_SMB_CIFS --"
 
 
 # Verifica se a particao (/mnt/backup) esta montada
-# Precisa existir o arquivo conecta.txt na unidade de backup
-# se nao existir crie com o comando ( touch /mnt/backup/conecta.txt )
+# Precisa existir o arquivo "conecta.txt" na unidade de backup
 if test -f /mnt/backup/conecta.txt; then {
         echo "   ---Conectado ao servidor de backup - arquivo conecta.txt encontrado"
 } else {
