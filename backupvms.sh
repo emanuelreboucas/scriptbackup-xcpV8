@@ -68,7 +68,7 @@ echo " -- FIM__Inicializacao_das_variaveis PARTE2 --"
 if test -d /mnt/backup; then echo " --EXISTE DIRETORIO--"; else mkdir -p /mnt/backup; fi;
 #mount -t cifs -o username=${winUser},password=${winPwd},domain=${winDomain} ${pathBackup} /mnt/backup -vvv
 mount -t cifs -o username="admin1",password="222HGF654" //10.140.2.77/vmachinebackup /mnt/backup -vvv
-echo " -- FIM__Da_montagem_da_particao_windows_QNAP --"
+echo " -- FIM__Da_montagem_da_particao_windows_SMB_CIFS --"
 
 ##---- FIM DA MONTAGEM
 
@@ -80,7 +80,7 @@ if test -f /mnt/backup/conecta.txt; then {
         echo "   ---ERRO Conectando ao servidor de backup"
         exit 1
 } fi;
-echo " -- FIM__Teste_de_montagem_QNAP --"
+echo " -- FIM__Teste_de_montagem_SMB_CIFS --"
 
 
 # Mensagem Iniciando Backup --> Direcionado para o LOG
